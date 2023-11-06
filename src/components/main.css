@@ -1,0 +1,648 @@
+.card {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    width: 18rem;
+  }
+  
+  .card-img-top {
+    width: 100%;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+  }
+  
+  .btn-outline-primary {
+    border-color: #AB1A19;
+    color: #000000;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #AB1A19;
+    color: #fff;
+    transform: scale(1.1);
+
+  }
+ 
+  .btn-outline-primary:active {
+    background-color: #000000;
+    color: #fff;
+  }
+  .about-us {
+    color: rgb(0, 0, 0);
+  
+  }
+
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia danh sách thành 2 cột có độ rộng bằng nhau */
+    grid-gap: 10px; /* Khoảng cách giữa các sản phẩm */
+  }
+  
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .product-item p {
+    margin: 0;
+  }
+  
+  .product-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .product-item button {
+    width: 30%;
+  }
+  .strong {
+    color: blue;
+  }
+
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .button-container button {
+    width: 100%;
+  }
+  
+  /* Product Container */
+.product-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #AB1A19; /* màu nền */
+}
+
+/* Product Header */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Product Card */
+.product-card {
+  width: calc(33.33% - 10px);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 350px;
+  max-height: 250px;
+  object-fit: cover;
+    border: 1px solid #eee; /* Độ dày 1px và màu xám nhạt */
+    border-radius: 4px; /* Bo tròn góc của viền */
+    display: block;
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+}
+
+.product-details {
+  padding: 10px 0;
+}
+
+h3.product-title {
+  font-size: 26px; /* Sử dụng đơn vị px */
+  color: rgb(12, 95, 6);
+  font-weight: bold; /* Điều chỉnh độ đậm */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Thêm bóng cho chữ */
+}
+
+p.product-price {
+  font-size: 20px; /* Sử dụng đơn vị px */
+  color: rgb(185, 39, 17);
+  font-weight: bold; /* Điều chỉnh độ đậm */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Thêm bóng cho chữ */
+}
+
+/* Product Actions */
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-buy-now {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-add-to-cart {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Pagination */
+.product-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-prev-page, .btn-next-page {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.btn-prev-page:disabled, .btn-next-page:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Nút Buy Now */
+.btn-buy-now {
+  background-color: #AB1A19; /* Màu đỏ của Shopee */
+  color: #fff; /* Màu chữ trắng */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-buy-now:hover {
+  background-color: #da572f; /* Màu cam nhạt khi di chuột qua */
+}
+
+/*!* Nút Add to Cart *!*/
+/*.btn-add-to-cart {*/
+/*  background-color: #04662b; !* Màu xanh *!*/
+/*  color: #fff; !* Màu chữ trắng *!*/
+/*  border: none;*/
+/*  padding: 10px 20px;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*  transition: background-color 0.3s;*/
+/*}*/
+
+/*!* Các nút Buy Now và Add to Cart *!*/
+/*.btn-buy-now,*/
+/*.btn-add-to-cart {*/
+/*  display: block;*/
+/*  width: 100%;*/
+/*  text-align: center;*/
+/*  margin-top: 10px;*/
+/*  width: 150px; !* Độ dài 150px *!*/
+
+/*}*/
+
+/* Căn giữa nút Buy Now và Add to Cart */
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.btn-add-to-cart:hover {
+  background-color: #2aa21a; /* Màu đỏ nhạt khi di chuột qua */
+}
+
+/* Chữ tiêu đề sản phẩm */
+.product-title {
+  font-size: 18px; /* Kích thước lớn hơn */
+  color: #333;
+  font-weight: 600; /* Độ đậm */
+}
+
+/* Chữ giá sản phẩm */
+.product-price {
+  font-size: 16px; /* Kích thước lớn hơn */
+  color: #ff4d36; /* Màu đỏ của Shopee */
+}
+
+/* Đường kẻ giữa sản phẩm */
+
+.product-card {
+  transition: transform 0.3s;
+  border: 3px solid #eee; /* Màu sắc phù hợp */
+
+}
+
+.product-card:hover {
+  border: 3px solid #eee; /* Màu sắc phù hợp */
+
+  transform: scale(0.94);
+}
+
+/* Font chữ cho toàn bộ nội dung */
+body {
+  font-family: Arial, sans-serif; /* Sử dụng font chữ phổ biến và dễ đọc */
+}
+
+
+/* sản phẩm bán chạy */
+
+/* Container chứa tất cả các sản phẩm */
+.products1 {
+  display: flex; /* Sử dụng flexbox để các sản phẩm nằm cạnh nhau */
+  flex-wrap: nowrap; /* Ngăn ngừng xuống hàng khi không đủ không gian */
+  overflow-x: auto; /* Cho phép cuộn ngang nếu không đủ không gian */
+}
+
+/* CSS cho mỗi sản phẩm */
+.product1 {
+  flex: 0 0 auto; /* Không co lại, không mở rộng, không thay đổi kích thước */
+  margin-right: 200px; /* Khoảng cách giữa các sản phẩm */
+  min-width: 100px; /* Độ rộng tối thiểu của mỗi sản phẩm */
+}
+
+.product-card1 {
+  width: calc(33.33% - 10px);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card1 {
+  transition: transform 0.3s;
+  border: 3px solid #eee; /* Màu sắc phù hợp */
+
+}
+
+.product-card1:hover {
+  border: 3px solid #eee; /* Màu sắc phù hợp */
+
+  transform: scale(0.94);
+}
+
+
+
+/* CSS cho Footer */
+footer {
+  background-color: #410000; /* Màu nền chủ đạo */
+  color: #5a0202; /* Màu chữ */
+  padding: 10px 0; /* Khoảng cách giữa nội dung và viền */
+
+}
+
+h5.text-uppercase {
+  font-size: 26px; /* Sử dụng đơn vị px */
+
+  color: #5a0202;
+  font-weight: bold; /* Điều chỉnh độ đậm */
+}
+.about-us {
+  font-size: 16px; /* Sử dụng đơn vị px */
+
+  color: rgb(0, 0, 0);
+  font-weight: bold; /* Điều chỉnh độ đậm */
+}
+
+/* CSS cho Footer Links */
+.list-unstyled a {
+  color: #7c0707; /* Màu chữ cho các liên kết */
+  text-decoration: none; /* Bỏ gạch chân mặc định cho liên kết */
+}
+
+.list-unstyled a:hover {
+  text-decoration: underline; /* Gạch chân khi di chuột qua liên kết */
+}
+
+a.text-dark {
+  font-size: 16px; /* Sử dụng đơn vị px */
+
+  color: rgb(0, 0, 0);
+  font-weight: bold; /* Điều chỉnh độ đậm */
+}
+
+
+a.text-dark:hover {
+  border: 3px solid #eee; /* Màu sắc phù hợp */
+  transform: scale(1.94);
+}
+
+
+
+/* CSS cho trang Admin */
+h1.admin {
+  font-weight: bold; /* Điều chỉnh độ đậm */
+    color: #AB1A19; /* Màu tiêu đề */
+    font-size: 32px;
+    text-align: center; /* Canh giữa theo chiều ngang */
+    display: flex;
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa the theo chiều dọc */
+    height: 100px; /* Thiết lập chiều cao (tuỳ chỉnh) */
+  
+  
+}
+
+
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  align-items: start; /* Căn giữa theo chiều dọc */
+  margin: 1px auto; /* Căn giữa theo chiều ngang */}
+
+
+input[type="text"]{
+  width: 90%;
+  padding: 7px;
+  border: 1px solid #680c0c;
+  border-radius: 5px;
+  margin: 0px auto; /* Căn giữa theo chiều ngang */
+
+}
+
+
+select[type="text"] {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #680c0c;
+  border-radius: 5px;
+  margin: 0px auto; /* Căn giữa theo chiều ngang */
+
+}
+
+
+button.admin {
+  background-color: #AB1A19; /* Màu nền nút */
+  color: #fff; /* Màu chữ nút */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1px; /* Khoảng cách giữa các nút */
+  transition: transform 0.2s; /* Hiệu ứng phóng to */
+}
+
+button.admin:hover {
+  transform: scale(0.9); /* Phóng to khi di chuột vào */
+}
+
+
+/* Hiển thị sản phẩm */
+.product-grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.product-item1 {
+  border: 1px solid #AB1A19;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Màu nền sản phẩm */
+}
+
+.strong {
+  font-weight: bold; /* Đậm cho các thông tin sản phẩm */
+}
+
+/* Phân trang */
+.pagination {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  background-color: #AB1A19; /* Màu nền nút phân trang */
+  color: #fff; /* Màu chữ nút phân trang */
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.pagination .active a {
+  background-color: #fff; /* Màu nền nút trang hiện tại */
+  color: #AB1A19; /* Màu chữ nút trang hiện tại */
+}
+
+label {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: block; /* Biến label thành một phần tử block để có thể căn giữa */
+  text-align: right; /* Căn giữa nội dung của label */
+}
+
+div.admin {
+  font-weight: bold;
+  font-size: 16px; /* Sử dụng đơn vị px */
+  text-align: left; /* Canh trái theo chiều ngang */
+
+  color: rgb(0, 0, 0);
+  font-weight: bold; /* Điều chỉnh độ đậm */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Thêm bóng cho chữ */
+}
+/* Định dạng thông tin sản phẩm */
+
+img.admin {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Đảm bảo hình ảnh nằm giữa màn hình */
+  width: 80%;
+  height: 140px;
+  margin-bottom: 15px; /* Khoảng trống 5px dưới ảnh */
+
+}
+
+/* CSS cho các trường thuộc tính */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Khoảng cách giữa các trường thuộc tính */
+}
+
+.form-group label {
+  font-weight: bold; /* Điều chỉnh độ đậm cho label */
+  color: #AB1A19; /* Màu chữ label */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Thêm bóng cho label */
+  display: block; /* Chuyển label thành phần tử block */
+  text-align: left; /* Căn trái label */
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  height: 60px;
+  padding: 7px;
+  border: 1px solid #680c0c;
+  border-radius: 5px;
+  margin: 0px auto; /* Căn giữa theo chiều ngang */
+}
+
+/* CSS cho các trường label */
+.label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.label-container label {
+  font-weight: bold; /* Điều chỉnh độ đậm cho label */
+  color: #AB1A19; /* Màu chữ label */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Thêm bóng cho label */
+  display: block; /* Chuyển label thành phần tử block */
+  text-align: left; /* Căn trái label */
+}
+
+/* Các trường input, textarea và select ở đây tương tự */
+
+.custom-textarea {
+  width: 316%; /* Độ rộng 100% */
+  height: 10%; /* Độ cao 100px (tùy chỉnh theo nhu cầu của bạn) */
+}
+
+/* giỏ hàng*/
+/* Container chứa một mục trong danh sách */
+.cart-item {
+  background-color: #f9f9f9; /* Màu nền xám nhạt */
+  border-radius: 10px; /* Bo tròn góc */
+  margin: 20px 0; /* Khoảng cách giữa các mục */
+  padding: 20px; /* Khoảng cách bên trong */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiển thị đổ bóng nhẹ */
+}
+
+/* Nút Đóng */
+
+
+/* Hình ảnh */
+/* Container chứa hình ảnh */
+.cart-item img {
+  max-width: 290px; /* Chiều rộng tối đa là 100% */
+  height: 200px; /* Đảm bảo tỷ lệ khung hình không bị méo */
+  border: 1px solid #ddd; /* Tạo viền xung quanh hình ảnh */
+  border-radius: 10%; /* Bo tròn hình ảnh */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Tạo bóng xung quanh hình ảnh */
+  transition: transform 0.2s; /* Tạo hiệu ứng phóng to */
+}
+
+/* Hiệu ứng phóng to khi di chuột */
+.cart-item img:hover {
+  transform: scale(1.1); /* Phóng to 10% */
+}
+
+
+/* Tiêu đề */
+.cart-item h3 {
+  font-size: 24px; /* Kích thước tiêu đề lớn hơn */
+  color: #333; /* Màu văn bản đậm */
+}
+
+/* Giá tiền */
+.cart-item .lead {
+  font-size: 20px; /* Kích thước văn bản lớn hơn */
+  font-weight: bold; /* Đậm */
+}
+
+/* Checkbox */
+/*.cart-item .form-check {*/
+/*  margin-top: 10px; !* Khoảng cách phía trên checkbox *!*/
+/*}*/
+
+/* Checkbox tùy chỉnh */
+.cart-item .form-check-input {
+  background-color: #680c0c; /* Màu nền đỏ đô */
+  border-color: green; /* Màu viền đỏ đô */
+}
+.cart-item .form-check-input:hover {
+  transform: scale(1.5); /* Phóng to 110% kích thước khi di chuột vào */
+}
+/* Label của checkbox */
+.cart-item .form-check-label {
+  color: #680c0c; /* Màu văn bản đỏ đô */
+  font-weight: normal; /* Loại bỏ độ đậm */
+}
+/* CSS cho biểu tượng "X" */
+.close-icon::before {
+  content: "X"; /* Hiển thị ký tự "X" */
+  font-size: 20px; /* Điều chỉnh kích thước biểu tượng */
+}
+/* CSS cho nút đóng với biểu tượng "X" và màu nền đỏ */
+.close-icon {
+  background-color: #680c0c; /* Đặt màu nền là đỏ */
+  color: white; /* Đặt màu chữ là trắng */
+  width: 30px; /* Điều chỉnh chiều rộng của nút */
+  height: 30px; /* Điều chỉnh chiều cao của nút */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; /* Loại bỏ viền */
+  cursor: pointer; /* Biến đổi con trỏ thành dấu chỉ tay khi di chuột qua */
+  border-radius: 50%; /* Bo tròn nút để tạo hình tròn */
+  font-size: 20px; /* Điều chỉnh kích thước biểu tượng "X" */
+}
